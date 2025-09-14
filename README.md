@@ -1,7 +1,3 @@
-Here’s a safe, portfolio-friendly `README.md` draft you can drop straight into your repo:
-
----
-
 # PiramieExcelMaker
 
 **Excel automation pipeline with Python (pandas, openpyxl, tkinter).**
