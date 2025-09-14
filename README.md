@@ -58,8 +58,8 @@ These are **synthetic examples** that mirror real-world structure so you can dem
 
 ## Demo
 
-![GUI Screenshot](docs/demo_gui.png)
-GUI_DEMO.png
+![GUI Screenshot](docs/GUI_DEMO.png)
+
 
 ---
 
