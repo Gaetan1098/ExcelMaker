@@ -1,68 +1,65 @@
-PiramieExcelMaker
+Here’s a safe, portfolio-friendly `README.md` draft you can drop straight into your repo:
 
-Excel automation pipeline with Python (pandas, openpyxl, tkinter).
+---
 
-Overview
+# PiramieExcelMaker
 
-PiramieExcelMaker streamlines monthly data consolidation in Excel. It allows you to ingest a monthly purchases report into a master workbook without overwriting existing rows, automatically preventing duplicates, creating backups, and expanding filters/tables for sorting.
+**Excel automation pipeline with Python (pandas, openpyxl, tkinter).**
 
-A simple drag-and-drop GUI makes it easy to select files and run either:
+## Overview
 
-Core Only → Builds summary and pivoted reports from the master.
+PiramieExcelMaker streamlines monthly data consolidation in Excel. It allows you to ingest a **monthly purchases report** into a **master workbook** without overwriting existing rows, automatically preventing duplicates, creating backups, and expanding filters/tables for sorting.
 
-Ingest + Core → Appends a monthly report into the master, then generates updated summaries.
+A simple **drag-and-drop GUI** makes it easy to select files and run either:
+
+* **Core Only** → Builds summary and pivoted reports from the master.
+* **Ingest + Core** → Appends a monthly report into the master, then generates updated summaries.
 
 The tool demonstrates:
 
-Excel data ingestion and normalization
+* Excel data ingestion and normalization
+* Header mapping and row de-duplication
+* Automated pivot/summarization logic
+* GUI design with tkinter + tkinterDnD2
+* File backup and safe write operations
 
-Header mapping and row de-duplication
+⚠️ **Note:** This repo uses **synthetic sample Excel files**. No real company data is included.
 
-Automated pivot/summarization logic
+## Tech Stack
 
-GUI design with tkinter + tkinterDnD2
+* Python 3.11
+* pandas
+* openpyxl
+* tkinter / tkinterDnD2 (optional for drag & drop)
 
-File backup and safe write operations
+## Usage
 
-⚠️ Note: This repo uses synthetic sample Excel files. No real company data is included.
+1. Clone the repo.
+2. Install dependencies:
 
-Tech Stack
+   ```bash
+   pip install pandas openpyxl tkinterdnd2
+   ```
+3. Run the GUI:
 
-Python 3.11
+   ```bash
+   python PiramieExcelMaker_gui.py
+   ```
+4. Select your **Master workbook** (`.xlsm` or `.xlsx`) and optionally a **Monthly report** (`.xlsx`), then choose an action.
 
-pandas
-
-openpyxl
-
-tkinter / tkinterDnD2 (optional for drag & drop)
-
-Usage
-
-Clone the repo.
-
-Install dependencies:
-
-pip install pandas openpyxl tkinterdnd2
-
-
-Run the GUI:
-
-python PiramieExcelMaker_gui.py
-
-
-Select your Master workbook (.xlsm or .xlsx) and optionally a Monthly report (.xlsx), then choose an action.
-
-Sample Data
+## Sample Data
 
 This repo provides:
 
-Master_Workbook_Sample.xlsx (with APR Bundle + Molo Molo sheets)
+* `Master_Workbook_Sample.xlsx` (with APR Bundle + Molo Molo sheets)
+* `Purchases_Report_Sample_May_v2.xlsx` (monthly report with headers on row 4)
 
-Purchases_Report_Sample_May_v2.xlsx (monthly report with headers on row 4)
+These are **synthetic examples** that mirror real-world structure so you can demo the pipeline safely.
 
-These are synthetic examples that mirror real-world structure so you can demo the pipeline safely.
+## Demo
 
-Demo
+![GUI Screenshot](docs/demo_gui.png)
+GUI_DEMO.png
 
+---
 
-(Replace with your own screenshot using the sample data)
